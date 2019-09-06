@@ -1,2 +1,2 @@
-TechFlow.Space Blockchain Course Session - 5
+iBriz-ICONOsphere Blockchain Course Session
 =============================================
