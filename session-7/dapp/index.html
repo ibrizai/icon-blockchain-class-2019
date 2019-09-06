@@ -1,0 +1,77 @@
+<html>
+<head>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script defer>var pollingController = {};
+
+    </script>
+    <script src="dist/bundle.js" ></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>    <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="index.js"></script>
+
+</head>
+<body>
+        <div class="row">
+                <div class="col-12" style="text-align: center;margin: 35px;">
+                        <button type="button" onclick="pollingController.help()" class=" btn btn-secondary">Help 
+                            </button>
+                </div>
+            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12" style="text-align: center;margin: 35px;">
+            <h2>Public opinion about Blockchain Platform </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <!--<div class="alert alert-success" role="alert">-->
+                <!--<label>Latest Vote :</label> <label id="votedBy">_____</label> voted for <label-->
+                    <!--id="votedFor">_____</label>-->
+            <!--</div>-->
+            <div class="card text-center">
+                <div class="">
+                    <img src="assets/images/ICX-Banner.jpg" class="" alt="Card image cap"  height="200" width="500"/>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Do you think Blockchain Platform will rule the world ?</h3>
+                    <form>
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input" type="radio" name="winnerRadio" id="inlineRadio1"
+                                       value="1" checked>
+                                <label class="form-check-label" for="inlineRadio1">YES</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input" type="radio" name="winnerRadio" id="inlineRadio2"
+                                       value="2">
+                                <label class="form-check-label" for="inlineRadio2">NO</label>
+                            </div>
+                        </div>
+                        <button type="button" onclick="pollingController.poll()" class=" btn btn-primary">VOTE</button>
+                        <button type="button" onclick="pollingController.getMyPoll()" class=" btn btn-secondary">MY
+                            VOTE
+                        </button>
+                    </form>
+                    <h4>Total Votes: <label id="totalVotes"></label></h4>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-6">
+            <canvas id="myChart" width="100" height="100"></canvas>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

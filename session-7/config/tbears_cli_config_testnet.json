@@ -1,0 +1,14 @@
+{
+  "uri": "https://bicon.net.solidwallet.io/api/v3",
+  "nid": "0x3",
+  "keyStore": "keystores/keystore_ibriz.json",
+  "from": "hx55c45fa2bf3a31d6eedb63400d0805208aa556d5",
+  "to": "cx0000000000000000000000000000000000000000",
+  "stepLimit": "0x100000000",
+  "deploy": {
+    "contentType": "tbears",
+    "mode": "install"
+  },
+  "txresult": {},
+  "transfer": {}
+}

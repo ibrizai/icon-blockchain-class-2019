@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+    <script> var web3Demo = {}</script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="jumbotron col align-self-center">
+            <h1 class="display-4">Hello Web3 world!</h1>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Active Address :<div
+                        id='activeWallet'>  0x....</div></span>
+
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Wallet Balance :<div
+                        id='activeBalance'>  ___</div></span>
+
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Token Contract Address :<div id='activeContract'>  0x....</div></span>
+
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Token Balance :<div
+                        id='contractBalance'>  ___</div></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h1>Send ETH</h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Receiving address</label>
+                    <input type="text" class="form-control" id="txtETHAddress"
+                           placeholder="Enter Address">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Amount</label>
+                    <input type="text" class="form-control" id="txtETHAmount">
+                </div>
+
+                <button type="button" onclick="web3Demo.sendETH()" class="btn btn-primary">Send ETH</button>
+            </form>
+        </div>
+        <div class="col-sm">
+
+        </div>
+        <div class="col-sm">
+            <h1>Send Token</h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Receiving address</label>
+                    <input type="text" class="form-control" id="txtETHAddress2"
+                           placeholder="Enter Address">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Amount</label>
+                    <input type="text" class="form-control" id="txtETHAmount2">
+                </div>
+
+                <button type="button" onclick="web3Demo.sendToken()" class="btn btn-primary">Send Token</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+<script src="./assets/contract.js"></script>
+<script src="./index.js"></script>
+<!--<script src="./dist/bundle.js"></script>-->
+</body>
+</html>
